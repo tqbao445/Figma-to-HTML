@@ -8,4 +8,83 @@ html {
 
 body {
     font-size: 1.6rem;
+    font-family: 'Poppins', 'sans-serif';
 }
+/* ====================COMMON======================= */
+a {
+    text-decoration: none;
+}
+.main_content {
+    width: 1170px;
+    margin: 0 auto;
+    max-width: calc(100% - 48px);
+}
+/* ====================Header======================= */
+.header {
+    background-color: #fffcf4;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+}
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 36px 0 8px;
+}
+.nav  {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav a {
+    color: #5f5b53;
+    font-size: 1.6rem;
+    padding: 8px 21px;
+    position: relative;
+}
+
+.nav a:hover,
+.nav li.active a {
+    color: black;
+    text-shadow: 0px 0px 0 #000;
+}
+
+.nav li.active a::after {
+    display: block;
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+    content: "";
+    width: 12px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: black;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    padding: 0 16px;
+    line-height: 50px;
+    min-width: 118px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: white;
+    border-radius: 24.5rem;
+    background-color: black;
+
+}
+
+.header .btn_sign-up {
+    min-width: 144px;
+}
+
+.header .action {
+    margin-left: 49px;
+}
+
